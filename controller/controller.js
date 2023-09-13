@@ -16,7 +16,7 @@ const createUser = async (req, res,next) => {
 
     const user = await User.create({ ...req.body })
     
-    res.status(StatusCodes.CREATED).json({user:user})
+    res.status(StatusCodes.CREATED).json({user:user.name,id:user._id})
     
 }
 
@@ -26,7 +26,7 @@ const getUser = async (req, res,next) => {
     if (!user) {
         return next( new ApiError(`user with id ${id} does not exist`,404))
     }
-    res.status(StatusCodes.OK).json({user:user.name})
+    res.status(StatusCodes.OK).json({user:user.name,id:user._id})
 }
 const updateUser = async (req, res,next) => {
     const { params:{id},body:{name}}  = req
@@ -38,7 +38,7 @@ const updateUser = async (req, res,next) => {
     if (!user) {
          return next(new ApiError(`user with this id ${id} does not exist`, 404));
     }
-    res.status(200).json({user:user})
+    res.status(200).json({user:user.name,id:user._id})
 }
 const deleteUser = async (req, res,next) => {
     const { params: { id} } = req
