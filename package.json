@@ -6,8 +6,8 @@
     "dev": "node app.js",
     "build":"yarn "
   },
-  "engine":{
-    "node":">=14.20.1"
+  "engines":{
+    "node": ">=14.20.1"
   },
   "license": "MIT",
   "dependencies": {
