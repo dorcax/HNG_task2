@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js",
-    "build":"yarn "
+    "dev": "nodemon app.js",
+    "prod": "node app.js",
+    "build": "yarn"
   },
-  "engines":{
+  "engines": {
     "node": ">=14.20.1"
   },
   "license": "MIT",
@@ -16,5 +17,8 @@
     "http-status-codes": "^2.2.0",
     "joi": "^17.10.1",
     "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
