@@ -4,7 +4,7 @@
 
 # FULL API DOCUMENTATION AND TESTING URL AT:
 
-[https://restless-sunset-526591.postman.co/workspace/Vendor-Management~da16b528-03c6-43df-9775-916c31c654b1/collection/9115404-41a882be-e0cb-4406-b6ff-486ef6a877e8?action=share&creator=9115404]
+[https://api.postman.com/collections/9115404-08746c71-de86-490b-b10d-5623840c3017?access_key=PMAT-01HABFGGJSCB60FXG8PN2RNP6G]
 
 # TASK BREAKDOWN
 
